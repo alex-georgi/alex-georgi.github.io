@@ -1,9 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Alex's Coding Grubs</title>
-    </head>
-    <body>
-        <h1>I am learning :)</h1>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>CS 416 Narrative Visualization</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://d3js.org/d3.v7.min.js"></script>
+	</head>
+	<body>
+		<div id="allTheGrubs">
+			<h1>The Console Wars, Visualized</h1>
+			<p>
+				Over the years, dozens of video game manufacturers have fought for the
+				throne in this ultra-competitive market. Explore the wins and losses of
+				key players across generations, and see how marketing, innovation, and
+				technological advancements shaped the industry's most successful
+				consoles through the decades.
+			</p>
+
+			<svg width="1000" height="500" style="border: 1px solid black"></svg>
+
+			<div id="buttons">
+				<button id="previousButton">Previous</button>
+				<button id="nextButton">Next</button>
+			</div>
+		</div>
+
+		<div id="tooltips"></div>
+
+		<div id="hint">
+			Try hovering over the bars for more info!
+		</div>
+
+		<script src="script.js"></script>
+	</body>
 </html>

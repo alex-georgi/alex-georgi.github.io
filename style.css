@@ -1,0 +1,114 @@
+/* General Stuff */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+#allTheGrubs {
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+/* Axis */
+#xaxisArea text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  fill: #333;
+}
+
+/* Labels */
+#labels {
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+}
+
+/* Tooltips */
+#tooltips {
+  position: absolute;
+  background-color: #495057;
+  color: #f8f9fa;      
+  padding: 14px 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 360px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+  z-index: 10;
+  text-align: center; 
+}
+
+/* Hint */
+#hint {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #212529;
+  color: #f8f9fa;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  pointer-events: auto;
+  user-select: none;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  z-index: 100;
+}
+
+/* Buttons */
+#buttons {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+#buttons button {
+  background-color: #6c757d;
+  color: #f8f9fa;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0 0.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 3px 6px rgba(108, 117, 125, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#buttons button:hover {
+  background-color: #5a6268;
+  box-shadow: 0 5px 10px rgba(90, 98, 104, 0.4);
+}
+
+#buttons button:active {
+  background-color: #495057;
+  box-shadow: 0 2px 5px rgba(73, 80, 87, 0.5);
+  transform: translateY(1px);
+}
+
+#buttons button:disabled {
+  background-color: #adb5bd;
+  color: #6c757d; 
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.65;
+  pointer-events: none;
+}
