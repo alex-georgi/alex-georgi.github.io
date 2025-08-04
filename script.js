@@ -23,7 +23,7 @@ var currentGen = 1;
 var minGen = 1;
 var maxGen = 9;
 
-d3.csv("Data/data.csv")
+d3.csv("data.csv")
 	.then((data) => {
 		data.forEach((row) => {
 			row["Units Sold (millions)"] = +row["Units Sold (millions)"];
