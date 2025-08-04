@@ -23,7 +23,7 @@ var currentGen = 1;
 var minGen = 1;
 var maxGen = 9;
 
-d3.csv("data.csv")
+d3.csv("Data/data.csv")
 	.then((data) => {
 		data.forEach((row) => {
 			row["Units Sold (millions)"] = +row["Units Sold (millions)"];
@@ -36,7 +36,7 @@ d3.csv("data.csv")
 		initializeChart();
 		generateChart(0, currentGen);
 
-		setTimeout(() => hint.style("opacity", 1), 5000);
+		setTimeout(() => hint.style("opacity", 1).style("pointer-events", "auto"), 5000);
 		hint.on("click", () => {
 			hint.style("opacity", 0).style("pointer-events", "none");
 		});

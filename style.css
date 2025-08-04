@@ -14,6 +14,7 @@ p {
   color: #333;
 }
 
+/* no clue why I need this on top of the body styling but it works now lol, thanks stack overflow */
 #allTheGrubs {
   max-width: 1000px;
   box-sizing: border-box;
@@ -34,6 +35,7 @@ p {
 
 /* Tooltips */
 #tooltips {
+  /* default stuff for color, sizing, etc */
   position: absolute;
   background-color: #495057;
   color: #f8f9fa;      
@@ -44,6 +46,7 @@ p {
   font-size: 1.1rem;
   line-height: 1.5;
   max-width: 360px;
+  /* interactivity type stuff*/
   opacity: 0;
   transition: opacity 0.25s ease;
   pointer-events: none;
@@ -53,6 +56,7 @@ p {
 
 /* Hint */
 #hint {
+  /* default stuff for color, sizing, etc */
   position: fixed;
   bottom: 20px;
   left: 50%;
@@ -65,7 +69,8 @@ p {
   font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   text-align: center;
-  pointer-events: auto;
+  /* interactivity type stuff*/
+  pointer-events: none;
   user-select: none;
   opacity: 0;
   cursor: pointer;
@@ -79,6 +84,7 @@ p {
   margin-top: 1.5rem;
 }
 #buttons button {
+  /* default stuff for color, sizing, etc */
   background-color: #6c757d;
   color: #f8f9fa;
   border: none;
@@ -93,6 +99,7 @@ p {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* interactivity type stuff*/
 #buttons button:hover {
   background-color: #5a6268;
   box-shadow: 0 5px 10px rgba(90, 98, 104, 0.4);
